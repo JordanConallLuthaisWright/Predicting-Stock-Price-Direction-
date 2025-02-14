@@ -59,19 +59,8 @@ We focus on **classification metrics** rather than predicting exact stock prices
 - The focus is on code **structure, interpretability, and reproducibility** rather than maximizing model accuracy.  
 - This project was designed to be completed within **3 hours**, balancing efficiency and depth of analysis.
 
-## Dependencies  
-To run this project, install the following Python libraries:  
-
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost yfinance
-
 ## Running the Notebook  
-Clone this repository and open `classification.ipynb` in Jupyter Notebook:  
-
-```bash
-git clone https://github.com/your-username/predict-stock-direction.git
-cd predict-stock-direction
-jupyter notebook
+Clone this repository and open `classification.ipynb` in Jupyter Notebook
 
 ## **Final Findings**  
 
