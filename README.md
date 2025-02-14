@@ -61,38 +61,38 @@ We focus on **classification metrics** rather than predicting exact stock prices
 
 ## Dependencies  
 To run this project, install the following Python libraries:  
+
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn xgboost yfinance
 
-## Running the Notebook 
-Clone this repository and open classification.ipynb in Jupyter Notebook:
+## Running the Notebook  
+Clone this repository and open `classification.ipynb` in Jupyter Notebook:  
+
 ```bash
 git clone https://github.com/your-username/predict-stock-direction.git
 cd predict-stock-direction
 jupyter notebook
 
-------------
-
-## Final Findings  
+## **Final Findings**  
 
 The final model, an **SVC (Support Vector Classifier) with a linear kernel (C=100)**, was trained using a **StandardScaler** preprocessing step to normalize the feature data. The model was trained on the **combined train-test dataset** and evaluated on the **validation set**.  
 
-### Performance Metrics  
-- **Accuracy:** **80.9%**  
-- **AUC (Area Under ROC Curve):** **0.91**  
+### **Performance Metrics**  
+- **Accuracy:** 80.9%  
+- **AUC (Area Under ROC Curve):** 0.91  
 
-### Key Insights  
+### **Key Insights**  
 - The model achieved a high **accuracy of 80.9%**, indicating strong predictive performance in classifying whether the **next day's closing price will be higher or lower than the opening price**.  
 - The **AUC score of 0.91** suggests that the model is very effective at distinguishing between upward and downward price movements.  
 - Using **SVM with a linear kernel** proved to be a **robust approach** for this classification problem, capturing relevant patterns in stock price data.  
 - Feature scaling via **StandardScaler** played a crucial role in optimizing model performance.  
 
-### Limitations & Considerations  
+### **Limitations & Considerations**  
 - The model is **only trained on historical price data** and does not incorporate external factors such as news sentiment, macroeconomic indicators, or fundamental data.  
 - While the accuracy is high, stock market conditions change dynamically, meaning model performance may vary in real-world trading scenarios.  
 - Further **hyperparameter tuning** or **feature engineering** (e.g., incorporating technical indicators) could improve model robustness and generalization.  
 
-### Next Steps  
+### **Next Steps**  
 - Experimenting with **ensemble models** (e.g., **Random Forest, XGBoost**) to compare performance.  
 - Exploring **deep learning models (e.g., LSTMs, GRUs)** for time-series forecasting.  
 - Adding **technical indicators (RSI, MACD, Bollinger Bands)** to enhance feature set.  
